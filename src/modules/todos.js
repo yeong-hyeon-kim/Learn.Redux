@@ -4,7 +4,7 @@ const TOGGLE_TODO = "todos/TOGGLE_TODO";
 
 // 액션 함수 선언
 let nextId = 1;
-export const addtodo = (text) => ({
+export const addTodo = (text) => ({
   type: ADD_TODO,
   todo: {
     id: nextId++,
@@ -21,8 +21,8 @@ export const toggleTodo = (id) => ({
 
 const InitialState = [
   {
-    id: 1,
-    text: "테스트",
+    id: 0,
+    text: "TASK",
     done: false,
   },
 ];

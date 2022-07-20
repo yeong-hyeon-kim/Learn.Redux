@@ -1,5 +1,6 @@
 import "./App.css";
 import CounterContainer from "./containers/CounterContainer";
+import TodosContainer from "./containers/TodosContainer";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         <div>
           <CounterContainer />
+          <TodosContainer />
         </div>
       </header>
     </div>
