@@ -113,3 +113,6 @@ export default function counter(state = initialState, action) {
 * 똑같은 매개 변수로 호출된 리듀서 함수는 언제나 똑같은 결과값을 반환해야만 합니다.
   * 실행할때마다 다른 결과값 : `new Date()`, 랜덤 숫자 생성, 네트워크 요청
   * 리듀서(Reducer) 밖에서 처리해야하므로 리덕스 미들웨어(Redux-Saga, Redux-thunk...)가 필요합니다.
+
+### 리덕스 플로우(Redux Flow)
+![Redux Flow](./img/Redux-Flow.png)
