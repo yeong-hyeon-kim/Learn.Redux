@@ -84,10 +84,10 @@ export default function counter(state = initialState, action) {
 
 ### 세부 환경(Environment Detail)
 
-||운영체제(OS)|언어(Language)|프레임워크(Framework)|비고(Remark)|
-|-|:-:|:-:|:-:|:-:|
-|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)||
-|버전(Version)|`10`, `11`||`18.2.0`||
+||운영체제(OS)|언어(Language)|프레임워크(Framework)|
+|-|:-:|:-:|:-:|
+|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)|
+|버전(Version)|`10`, `11`||`18.2.0`|
 
 ## 📖 비고(Remark)
 
