@@ -115,4 +115,5 @@ export default function counter(state = initialState, action) {
   * 리듀서(Reducer) 밖에서 처리해야하므로 리덕스 미들웨어(Redux-Saga, Redux-thunk...)가 필요합니다.
 
 ### 리덕스 플로우(Redux Flow)
+
 ![Redux Flow](./img/Redux-Flow.png)
