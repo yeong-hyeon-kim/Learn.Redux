@@ -9,9 +9,18 @@
 1. [Counter](#Counter)
 2. [To Do List](#To-Do-List)
 
-## 💡 사용법(Tip)
+## 💻 개발 환경(Develop Environment)
 
-### 리덕스(Redux) 키워드
+### 세부 환경(Environment Detail)
+
+||운영체제(OS)|언어(Language)|프레임워크(Framework)|
+|-|:-:|:-:|:-:|
+|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)|
+|버전(Version)|`10`, `11`||`18.2.0`|
+
+## 📖 비고(Remark)
+
+## 리덕스(Redux) 키워드
 
 ### 액션(Action)
 
@@ -80,25 +89,14 @@ export default function counter(state = initialState, action) {
 * 스토어(Store) 내장 함수 중 하나로 함수 형태의 값을 매개 변수(Prameter)로 받습니다.
 * 리액트(React)에서 사용할때는 `react-redux` 라이브러리에서 제공하는 `connect` 함수 또는 `useSelector` `Hook` 을 사용하여 리덕스 스토어의 상태에 구독합니다.
 
-## 💻 개발 환경(Develop Environment)
+## 리덕스(Redux) 3가지 규칙
 
-### 세부 환경(Environment Detail)
-
-||운영체제(OS)|언어(Language)|프레임워크(Framework)|
-|-|:-:|:-:|:-:|
-|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)|
-|버전(Version)|`10`, `11`||`18.2.0`|
-
-## 📖 비고(Remark)
-
-### 리덕스(Redux) 3가지 규칙
-
-#### 1. 하나의 애플리케이션 안에는 하나의 스토어를 가져야 합니다
+### 1. 하나의 애플리케이션 안에는 하나의 스토어를 가져야 합니다
 
 * 필수는 아니지만 권장하지 않습니다.
 * 개발 도구 활용할 수 없게 됩니다.
 
-#### 2. 상태(State)는 읽기 전용 입니다
+### 2. 상태(State)는 읽기 전용 입니다
 
 * 리액트(React)에서 `state`를 업데이트 할 때 `setState`를 사용하고, 배열을 업데이트 할 때 `concat` 과 비슷한 함수로 새로운 배열로 교체하는 방식으로 업데이트 합니다.
 
@@ -106,13 +104,14 @@ export default function counter(state = initialState, action) {
 
 * 리덕스(Redux)에서 내부적으로 데이터가 변경 되는 것을 감지하기 위해 `shallow equality` 검사를 하므로 불변성을 유지해야 합니다.
 
-#### 3. 변화를 일으키는 함수 , 순수(원래 그대로)한 함수여야 합니다
+### 3. 변화를 일으키는 함수 , 순수(원래 그대로)한 함수여야 합니다
 
 * 리듀서 함수는 이전 상태와, 액션 객체를 매개 변수(Parameter)로 받습니다.
 * 이전 상태(State)는 건들이지 않고, 변화를 일으킨 새로운 상태(State) 객체를 만들어 반환해야 합니다.
 * 똑같은 매개 변수로 호출된 리듀서 함수는 언제나 똑같은 결과값을 반환해야만 합니다.
-  * 실행할때마다 다른 결과값 : `new Date()`, 랜덤 숫자 생성, 네트워크 요청
-  * 리듀서(Reducer) 밖에서 처리해야하므로 리덕스 미들웨어(Redux-Saga, Redux-thunk...)가 필요합니다.
+  * 실행할 때마다 다른 결과값 : `new Date()`, 랜덤 숫자 생성, 네트워크 요청
+  * 리듀서(Reducer)가 아닌 다른 곳에서 처리하기 위해 리덕스 미들웨어(Redux-Saga, Redux-Thunk 등)가 필요합니다.
+* > 액션(Action) -> 미들웨어(Middleware) -> Next -> 리듀서(Reducer) -> 스토어(Store)
 
 ### 리덕스 플로우(Redux Flow)
 
